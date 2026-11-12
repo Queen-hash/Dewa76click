@@ -32,6 +32,7 @@ export async function POST(request: Request): Promise<Response> {
     const res = await fetch(SITEVERIFY_URL, {
       method: "POST",
       body: formData,
+      signal: AbortSignal.timeout(10_000),
     });
     const data = (await res.json()) as { success?: boolean };
     return Response.json({ ok: data.success === true });

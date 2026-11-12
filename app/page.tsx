@@ -49,7 +49,7 @@ export default function AgeGatePage() {
   };
 
   const handleContinue = () => {
-    if (redirecting) return;
+    if (!verified || redirecting) return;
     setRedirecting(true);
 
     // Pixel konversi sebelum pindah halaman

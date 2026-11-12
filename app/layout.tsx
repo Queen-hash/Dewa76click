@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 // ==========================================
-// BAGIAN METADATA RESMI (WHITE CONTENT)
+// METADATA HALAMAN
 // ==========================================
 export const metadata: Metadata = {
   title: "Konfirmasi Usia 18+",
