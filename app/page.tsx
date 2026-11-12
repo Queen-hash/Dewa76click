@@ -70,18 +70,15 @@ export default function AgeGatePage() {
         <div className="absolute -bottom-40 -right-28 h-96 w-96 rounded-full bg-[#854D0E]/25 blur-[130px]" />
       </div>
 
-      <main className="animate-fade-up relative w-full max-w-md rounded-3xl border border-white/15 bg-white/[0.06] p-7 sm:p-9 text-center shadow-[0_30px_70px_-20px_rgba(0,0,0,0.85)] backdrop-blur-xl before:absolute before:inset-x-7 before:top-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/40 before:to-transparent">
+      <main className="animate-fade-up relative w-full max-w-md rounded-3xl border border-white/15 bg-white/[0.06] p-7 sm:p-9 text-center shadow-[0_30px_70px_-20px_rgba(0,0,0,0.85)] backdrop-blur-xl before:absolute before:inset-x-7 before:top-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-white/40 before:to-transparent">
         {/* Medali 18+ */}
         <div
           aria-hidden
-          className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#A16207] to-[#854D0E] font-display text-2xl font-semibold text-white shadow-[0_0_32px_-6px_rgba(161,98,7,0.7)] ring-1 ring-[#E0B44A]/40"
+          className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-linear-to-br from-[#A16207] to-[#854D0E] font-display text-2xl font-semibold text-white shadow-[0_0_32px_-6px_rgba(161,98,7,0.7)] ring-1 ring-[#E0B44A]/40"
         >
           18+
         </div>
 
-        <h1 className="mb-3 font-display text-[2rem] leading-[1.15] font-semibold text-white sm:text-[2.5rem]">
-          Konten Khusus Dewasa
-        </h1>
         <p className="mb-6 text-sm leading-relaxed text-slate-300">
           Halaman ini hanya untuk pengunjung berusia 18 tahun ke atas.
           Selesaikan verifikasi di bawah ini, lalu tekan tombol untuk
@@ -125,7 +122,7 @@ export default function AgeGatePage() {
           onClick={handleContinue}
           disabled={!verified || redirecting}
           aria-busy={redirecting}
-          className="w-full cursor-pointer rounded-xl bg-gradient-to-br from-[#A16207] to-[#854D0E] px-5 py-4 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(161,98,7,0.55)] transition-all duration-200 hover:from-[#B45309] hover:to-[#93570A] focus-visible:ring-2 focus-visible:ring-[#E0B44A] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0C0A09] focus-visible:outline-none active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:from-[#A16207] disabled:hover:to-[#854D0E]"
+          className="w-full cursor-pointer rounded-xl bg-linear-to-br from-[#A16207] to-[#854D0E] px-5 py-4 text-base font-semibold text-white shadow-[0_10px_30px_-8px_rgba(161,98,7,0.55)] transition-all duration-200 hover:from-[#B45309] hover:to-[#93570A] focus-visible:ring-2 focus-visible:ring-[#E0B44A] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0C0A09] focus-visible:outline-none active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:from-[#A16207] disabled:hover:to-[#854D0E]"
         >
           {redirecting ? (
             <>
