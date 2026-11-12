@@ -70,10 +70,6 @@ export default function AgeGatePage() {
         >
           18+
         </div>
-
-        <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-3">
-          Konten Khusus Dewasa
-        </h1>
         <p className="text-slate-400 text-sm leading-relaxed mb-6">
           Halaman ini hanya untuk pengunjung berusia 18 tahun ke atas.
           Selesaikan verifikasi di bawah ini, lalu tekan tombol untuk
