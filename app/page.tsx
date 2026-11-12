@@ -95,7 +95,7 @@ export default function AgeGatePage() {
           type="button"
           onClick={handleContinue}
           disabled={!verified || redirecting}
-          className="w-full py-3.5 px-5 rounded-xl font-bold text-base text-white bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.98] transition-all cursor-pointer"
+          className="w-full py-3.5 px-5 rounded-xl font-bold text-base text-white bg-linear-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.98] transition-all cursor-pointer"
         >
           {redirecting ? "Menghubungkan..." : "Saya Berusia 18+ — Lanjutkan"}
         </button>
